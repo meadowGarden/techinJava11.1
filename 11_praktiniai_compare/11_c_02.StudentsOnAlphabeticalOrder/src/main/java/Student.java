@@ -18,12 +18,6 @@ public class Student implements Comparable<Student>{
 
     @Override
     public int compareTo(Student student) {
-        if (this.name() == human.getWage()) {
-            return 0;
-        } else if (this.getWage() < human.getWage()) {
-            return 1;
-        } else {
-            return -1;
-        }
+       return this.name.compareTo(student.getName());
     }
 }
